@@ -1,5 +1,7 @@
 # **************** Documentation for Use **************** 
 
+Deployment Base URL: howtobuildweek.herokuapp.com/
+
 ## Endpoints
 
 POST: /api/register
