@@ -24,8 +24,10 @@ module.exports = {
   },
 
   production: {
-    client: "pg",
-    connection: pgConnection,
+    client: "sqlite3",
+    connection: {
+        filename: "./data/database.db3",
+      },
     pool: {
       min: 2,
       max: 10,
