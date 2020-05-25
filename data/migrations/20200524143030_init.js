@@ -3,7 +3,7 @@ exports.up = function(knex) {
     return knex.schema.createTable("users", user=>{
         user.increments();
         user.string("username", 24).notNullable().unique();
-        user.string("password", 48).notNullable();
+        user.string("password").notNullable();
     })
     .createTable("hacks", lh=>{
         lh.increments();
