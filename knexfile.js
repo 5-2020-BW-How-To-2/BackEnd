@@ -31,7 +31,7 @@ module.exports = {
       max: 10,
     },
     migrations: {
-      directory: "./data/migrations",
+      directory: "./data/database.db3",
     },
     seeds: {
       directory: "./data/seeds",
