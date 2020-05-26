@@ -17,7 +17,7 @@ server.use("/api/users", userRouter);
 server.use("/api/hacks", hackRouter);
 
 server.get("/", (req, res) => {
-  res.json({ api: "up" });
+  res.status(200).json({ api: "up" });
 });
 
 module.exports = server;
