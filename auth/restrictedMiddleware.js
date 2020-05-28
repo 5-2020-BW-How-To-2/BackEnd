@@ -14,6 +14,6 @@ module.exports = (req, res, next) => {
       }
     });
   } else {
-    res.status(400).json({ error: "You must be logged in to do this" });
+    res.status(401).json({ error: "You must be logged in to do this" });
   }
 };

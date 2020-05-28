@@ -70,13 +70,15 @@ router.put("/:id", restricted, validateHackId, isUsersPost, (req, res)=>{
             }
             Hacks.update(req.params.id, updatedPost)
             .then(hax=>{
-                console.log(hax)
                 res.status(200).json(hax)
             })
             .catch(err=>{
                 console.log(err)
                 res.status(500).json({error: "failed to update life hack"})
             })
+        }
+        else{
+            res.status(400).json({error: "post must contain a title and a description"})
         }
     })
     .catch(err=>{
